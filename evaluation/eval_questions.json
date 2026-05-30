@@ -1,0 +1,37 @@
+[
+  {
+    "id": "Q1",
+    "question": "What is a Compound AI System?",
+    "expectedBehavior": "System should retrieve Week8.1 material and answer with page-grounded citations.",
+    "expectedSourceHint": "Week8.1_Compound_AI_Systems.pdf, pages around 7 to 10",
+    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"]
+  },
+  {
+    "id": "Q2",
+    "question": "What capabilities make an AI system agentic?",
+    "expectedBehavior": "System should retrieve agentic AI related pages and provide a grounded summary with citations.",
+    "expectedSourceHint": "Agentic AI lecture materials, pages discussing autonomy, planning, and tool use",
+    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"]
+  },
+  {
+    "id": "Q3",
+    "question": "What are common trustworthiness problems in AI?",
+    "expectedBehavior": "System should retrieve trustworthiness content and provide a cited, evidence-consistent answer.",
+    "expectedSourceHint": "Course materials covering reliability, hallucination, robustness, or safety",
+    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"]
+  },
+  {
+    "id": "Q4",
+    "question": "How does retrieval support an AI agent?",
+    "expectedBehavior": "System should retrieve retrieval or memory related content and explain support for grounding or control.",
+    "expectedSourceHint": "Course materials discussing retrieval, memory, or RAG-like workflows",
+    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"]
+  },
+  {
+    "id": "Q5",
+    "question": "What is the final exam date for this course?",
+    "expectedBehavior": "System should return low-confidence unsupported behavior or refusal when evidence is not available.",
+    "expectedSourceHint": "No relevant evidence expected in uploaded lecture content",
+    "evaluationFocus": ["refusal", "verification", "confidence"]
+  }
+]

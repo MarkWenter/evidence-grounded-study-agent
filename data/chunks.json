@@ -1,0 +1,1367 @@
+[
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p1",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 1,
+    "text": "Welcome to COMPSCI 703 Generalising Artificial Intelligence Dr Hong Jia University of Auckland"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p2",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 2,
+    "text": "Compound AI Systems"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p3",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 3,
+    "text": "Impressive AI demos"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p4",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 4,
+    "text": "Reliable AI Systems Turning monolithic LMs into reliable Al systems remains challenging."
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p5",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 5,
+    "text": "Air Canada had to pay Moffatt $812.02 (£642.64) in damages and tribunal fees. \"It should be obvious to Air Canada that it is responsible for all the information on its website,\" Reliable AI Systems"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p6",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 6,
+    "text": "Every AI system will make mistakes. But the monolithic nature of LMs makes them hard to control, debug, and improve. Reliable AI Systems"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p7",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 7,
+    "text": "To tackle this, AI researchers increasingly build Compound AI Systems. Compound AI Systems: modular programs that use LMs as specialized components Compound AI Systems"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p8",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 8,
+    "text": "Literature: DrQA (Chen et al., 2017), ORQA (Lee et al., 2019), RAG (Lewis et al., 2020), ColBERT-QA (Khattab et al., 2020) Compound AI Systems i.e. modular programs that use LMs as specialized components Slides adapted from: Omar Khattab"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p9",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 9,
+    "text": "Compound AI Systems What compounds protect the digestive system? L M The stomach is protected by gastric acid and proteases. Transparency: can debug traces & offer user-facing attribution Efficiency: can use smaller LMs, offloading knowledge & control flow Literature: DrQA (Chen et al., 2017), ORQA (Lee et al., 2019), RAG (Lewis et al., 2020), ColBERT-QA (Khattab et al., 2020) Example: Retrieval-Augmented Generation i.e. modular programs that use LMs as specialized components"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p10",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 10,
+    "text": "Control: can iteratively improve the system & ground it via tools Literature: GoldEn (Qi et al., 2019), DecompRC (Min et al., 2019), MDR (Xiong et al., 2020), Baleen (Khattab et al., 2021) Example: Multi-Hop Retrieval-Augmented Generation Compound AI Systems i.e. modular programs that use LMs as specialized components"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p11",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 11,
+    "text": "Quality: more reliable composition of better-scoped LM capabilities STORM: Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models (Shao et al., 2024) “The ColBERT retriever” Example: Compositional Report Generation, i.e. brainstorming an outline, collecting references, etc. Compound AI Systems"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p12",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 12,
+    "text": "+Task-agnostic prompting strategies, e.g. Best-of- N, Chain Of Thought, Program of Thought, ReAct, Reflexion, Archon, … Inference-time Scaling: systematically searching for better outputs i.e. modular programs that use LMs as specialized components Literature: AlphaCodium (Ridnik, 2024), DIN-SQL (Pourreza & Rafiei, 2023), RARR (Gao et al., 2023), and many others Compound AI Systems"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p13",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 13,
+    "text": "Why Compound AI Systems? 1. Quality: more reliable composition of better-scoped LM capabilities 2. Control: can iteratively improve the system & ground it via tools 3. Transparency: can debug trajectories & offer user-facing attribution 4. Efficiency: can use smaller LMs, offloading knowledge & control flow 5. Inference-time Scaling: can systematically search for better outputs"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p14",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 14,
+    "text": "Recap"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p15",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 15,
+    "text": "Unfortunately, LMs are highly sensitive to how theyʼre instructed to solve tasks, so under the hood we often… Prompting..."
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p16",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 16,
+    "text": "Prompting... The usual way of writing prompts is: • you manually write a long set of instructions • you try few-shot examples • you keep revising the wording • you tune it based on experience and intuition ...."
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p17",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 17,
+    "text": "Each “prompt” couples five very different roles: • The core input → output behavior, a Signature. • The computation specializing an inference-time strategy to the signature, a Predictor. • The computation formatting the signatureʼs inputs and parsing its typed outputs, an Adapter. • The computations defining objectives and constraints on behavior, Metrics and Assertions. • The strings that instruct (or weights that adapt) the LM for desired behavior, an Optimizer. • Existing Compound AI Systems are modular in principle, but are too “stringly-typed”: they couple the fundamental system architecture with incidental choices not portable to new LMs, objectives, or pipelines. The problems"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p18",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 18,
+    "text": "• We know how to build controllable systems & improve them modularly. • That is called… programming. • What if we could abstract Compound AI Systems as programs with fuzzy natural-language-typed modules that learn their behavior? Compound AI Systems"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p19",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 19,
+    "text": "DSPy Framework"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p20",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 20,
+    "text": "DSPy Framework • What if we want to optimize the LMs of each module?"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p21",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 21,
+    "text": "DSPy Framework DSPy doesn’t ask you to hard-code a long prompt text. Instead, it breaks the task down into: • what the inputs are • what the intermediate steps are • what the output format is • which module to call at each step • how to automatically optimize based on metrics"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p22",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 22,
+    "text": "As an example, let’s say we wanted to build this simple pipeline for multi-hop retrieval-augmented generation Example"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p23",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 23,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p24",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 24,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Init method defines LM calls"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p25",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 25,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Forward method defines program logic"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p26",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 26,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Signature: what to do, not how to prompt!"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p27",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 27,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Modules define the strategy for expressing a signature"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p28",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 28,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example How can we translate these into high-quality prompts?"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p29",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 29,
+    "text": "First, modules are translated into basic prompts using Adapters and Predictors. Example self.generate_query = dspy.ChainOfThought(\"context, question -> query\") dspy.Adapter(self.generate_query) Given the fields “context” and “question”, respond with the field “query”. Follow the following format: Context: <context> Question: <question> Reasoning: Let’s think step by step to <..> Query: <query> Predefined Adapters are used to translate modules into basic prompts"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p30",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 30,
+    "text": "DSPy’s Optimizers can then tune this prompt! Given the fields “context” and “question”, respond with the field “query”. Follow the following format: Context: <context> Question: <question> Reasoning: Let’s think step by step to <..> Query: <query> ... jointly along with all other prompts in your program Example Program Score: 37% optimizer = MIPROv2() optimized_program = optimizer.compile(program) Carefully read the provided `context` and `question`. Your task is to formulate a concise and relevant `query` that could be used to retrieve information from a search engine to answer the question most effectively. The `query` should encapsulate... Follow the following format: Context: <context> Question: <question> Reasoning: Let’s think step by step to <..> Query: <query> Here are some examples: <...> Program Score: 55%"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p31",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 31,
+    "text": "Instead of tweaking a string prompt… Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: (1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search. (2) Lookup[keyword], which returns the next sentence containing keyword in the current passage. (3) Finish[answer], which returns the answer and finishes the task. Here are some examples. Question: What is the elevation range for the area that the eastern sector of the Colorado orogeny exten Thought 1: I need to search Colorado orogeny, find the area that the eastern sector of the Colorado orog elevation range of the area. Action 1: Search[Colorado orogeny] Observation 1: The Colorado orogeny was an episode of mountain building (an orogeny) in Colorado and Thought 2: It does not mention the eastern sector. So I need to look up eastern sector. Action 2: Lookup[eastern sector] Observation 2: (Result 1 / 1) The eastern sector extends into the High Plains and is called the Central Pl [... truncated …] Example 33% accuracy with GPT-3.5 on a multi- hop QA task"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p32",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 32,
+    "text": "Multi-Hop Retrieval-Augmented Generation (HotPotQA) Compiling MultiHop into a small LM (T5-770M) with DSPy’s BootstrapFinetune, starting from 200 answers, scores 39%"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p33",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 33,
+    "text": "SLMs..."
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p34",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 34,
+    "text": "DSPy Optimizers vary in how they tune the prompts & weights in a program, but at a high level they typically… • Construct an initial prompt from each module via an Adapter • Generate examples of every module via rejection sampling • Use the examples to update the programʼs modules • Automatic few-shot prompting: dspy.BootstrapFewShotWithRandomSearch • Induction of instructions: dspy.MIPROv2 • Multi-stage fine-tuning: dspy.BootstrapFinetune Optimizers"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p35",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 35,
+    "text": "Enabled many SoTA systems like PATH (Jasper Xia, UWaterloo); IReRa (Karel DʼOosterlink, UGhent), STORM (Yijia Shao, Stanford), EDEN (Siyan Li, Columbia), Efficient Agents (Sayash Kapoor, Princeton), ECG-Chat (Yubao Zhao, Beijing Normal U), …"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p36",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 36,
+    "text": "[No extractable text on this page]"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p37",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 37,
+    "text": "Problem Setting"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p38",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 38,
+    "text": "Constraints / Assumptions 1. No access to log-probs or model weights: Developers may want to optimize LM programs for use on API only models. 2. No intermediate metrics / labels: We assume no access to manual ground-truth labels for intermediate stages. 3. Budget-Conscious: We want to limit the number of input examples we require and the number of program calls we make."
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p39",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 39,
+    "text": "Key challenges Prompt Proposal: Searching over all possible strings is intractable, especially as we add in multiple modules we need to optimize. Instead, we need to propose a small set of high quality options. Credit Assignment: We need efficient ways of inferring how each prompt variable contributes to performance, so that we can find the best set for our program."
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p40",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 40,
+    "text": "LM Program: Bootstrap Few-Shot Examples Bootstrap Few-shot examples with simple rejection sampling"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p41",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 41,
+    "text": "LM Program:Training Input Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p42",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 42,
+    "text": "LM Program:Training Input Metric Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p43",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 43,
+    "text": "LM Program:Training Input Metric Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p44",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 44,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p45",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 45,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p46",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 46,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p47",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 47,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p48",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 48,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p49",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 49,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p50",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 50,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p51",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 51,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p52",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 52,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Task Demonstration Candidate Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p53",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 53,
+    "text": "LM Program: Training Input Metric using random search! Search Query Output 1 Task Demonstration Candidate Search Query Output 2 Answer Output Bootstrap Few-Shot (w/ Random Search) Search for the best set"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p54",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 54,
+    "text": "Search Query Output 1 Task Demonstration Candidate Search Query Output 2 Answer Output Bootstrap Few-Shot (w/ Random Search)"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p55",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 55,
+    "text": "Prompt Proposals “Think step by step” “Take a deep breath and think step by step” “Carefully solve the problem” “Let’s do the math” Evaluate Propose More Prompts Given prompts/scores propose more prompts. “Think step by step” Score: 31 “Take a deep breath and think step by step” Score: 42 LLM “Proposer LM” C. Yang*, X. Wang, Y. Lu, H. Liu, Q. V. Le, D. Zhou, X. Chen* “Large Language Models as Optimizers” What is OPRO? Optimization through Prompting"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p56",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 56,
+    "text": "Coordinate-Ascent OPRO Initial extension to multi- stage: CA-OPRO"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p57",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 57,
+    "text": "Key Idea: Coordinate-Ascent was expensive, maybe we don’t need explicit credit assignment? Let’s just change both prompts at a time in parallel! Module-Level OPRO"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p58",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 58,
+    "text": "Key Idea: Coordinate-Ascent was expensive, maybe we don’t need explicit credit assignment? Let’s just change both prompts at a time in parallel! Module-Level OPRO"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p59",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 59,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Training set examples (input/output pairs from training set) Grounding!"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p60",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 60,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Bootstrapped demo example: Question: The Victorians - Their Story In Pictures is a documentary series written by an author born in what year? Reasoning: Let's think step by step in order to find the search query. We need to find the author's birth year. We can search for the author's name along with the phrase \"birth year\" or \"birthday\" to get the desired information. - Their Story In Pictures birth year\" or \"author of The Victorians - Their Story In Pictures birthday\""
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p61",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 61,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Dataset summary example: \"The dataset consists of factual, trivia-style questions across a wide range of topics, presented in a clear and concise manner. These questions are likely designed for use in trivia games..” Dataset Summary (Loop over the data and use an LLM to write a summary)"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p62",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 62,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Program Summary example: “The program code appears to be designed to answer complex questions by retrieving and processing information from multiple sources or passages. In this case, the program is set up for two hops, … The module `self.generate_query` in this program is responsible for generating a search query based on the context and question provided.” Dataset Summary (Loop over the data and use an LLM to write a summary) Summary of a Reflexive View of the LM Program Code itself"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p63",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 63,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Tip example: “Don’t be afraid to be creative when generating the new instruction” “Keep the instruction clear and concise.\" “Make sure your instruction is very informative and descriptive.\" Dataset Summary (Loop over the data and use an LLM to write a summary) Summary of a Reflexive View of the LM Program Code itself Tip for instruction generation (be creative, be succinct, etc.)"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p64",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 64,
+    "text": "Prompt Proposal 1. Bootstrap Task Demonstrations 2. Propose Instruction Candidates using an LM Program Credit Assignment 3. Jointly tune with a Bayesian hyperparameter optimizer Multi-prompt Instruction PRoposal Optimizer MIPRO"
+  },
+  {
+    "id": "e0c081f7-ca19-476e-82db-155fc811d319-p65",
+    "documentId": "e0c081f7-ca19-476e-82db-155fc811d319",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 65,
+    "text": "Summary • Monolithic LMs are powerful but unreliable • → hard to control, debug, and improve • Compound AI Systems • = modular programs using LMs as components • Key benefits: quality, control, transparency, efficiency, inference-time scaling • Shift from prompt engineering → programming LM systems • DSPy framework abstracts LM pipelines into structured modules (signatures, modules, optimizers) • Automatically generates & optimizes prompts instead of manual trial-and-error • Uses techniques like bootstrapping, few-shot learning, and optimizers (e.g., MIPRO) • Enables systematic, scalable, and reliable AI development"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p1",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 1,
+    "text": "Welcome to COMPSCI 703 Generalising Artificial Intelligence Dr Hong Jia University of Auckland"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p2",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 2,
+    "text": "Compound AI Systems"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p3",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 3,
+    "text": "Impressive AI demos"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p4",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 4,
+    "text": "Reliable AI Systems Turning monolithic LMs into reliable Al systems remains challenging."
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p5",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 5,
+    "text": "Air Canada had to pay Moffatt $812.02 (£642.64) in damages and tribunal fees. \"It should be obvious to Air Canada that it is responsible for all the information on its website,\" Reliable AI Systems"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p6",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 6,
+    "text": "Every AI system will make mistakes. But the monolithic nature of LMs makes them hard to control, debug, and improve. Reliable AI Systems"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p7",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 7,
+    "text": "To tackle this, AI researchers increasingly build Compound AI Systems. Compound AI Systems: modular programs that use LMs as specialized components Compound AI Systems"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p8",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 8,
+    "text": "Literature: DrQA (Chen et al., 2017), ORQA (Lee et al., 2019), RAG (Lewis et al., 2020), ColBERT-QA (Khattab et al., 2020) Compound AI Systems i.e. modular programs that use LMs as specialized components Slides adapted from: Omar Khattab"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p9",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 9,
+    "text": "Compound AI Systems What compounds protect the digestive system? L M The stomach is protected by gastric acid and proteases. Transparency: can debug traces & offer user-facing attribution Efficiency: can use smaller LMs, offloading knowledge & control flow Literature: DrQA (Chen et al., 2017), ORQA (Lee et al., 2019), RAG (Lewis et al., 2020), ColBERT-QA (Khattab et al., 2020) Example: Retrieval-Augmented Generation i.e. modular programs that use LMs as specialized components"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p10",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 10,
+    "text": "Control: can iteratively improve the system & ground it via tools Literature: GoldEn (Qi et al., 2019), DecompRC (Min et al., 2019), MDR (Xiong et al., 2020), Baleen (Khattab et al., 2021) Example: Multi-Hop Retrieval-Augmented Generation Compound AI Systems i.e. modular programs that use LMs as specialized components"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p11",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 11,
+    "text": "Quality: more reliable composition of better-scoped LM capabilities STORM: Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models (Shao et al., 2024) “The ColBERT retriever” Example: Compositional Report Generation, i.e. brainstorming an outline, collecting references, etc. Compound AI Systems"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p12",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 12,
+    "text": "+Task-agnostic prompting strategies, e.g. Best-of- N, Chain Of Thought, Program of Thought, ReAct, Reflexion, Archon, … Inference-time Scaling: systematically searching for better outputs i.e. modular programs that use LMs as specialized components Literature: AlphaCodium (Ridnik, 2024), DIN-SQL (Pourreza & Rafiei, 2023), RARR (Gao et al., 2023), and many others Compound AI Systems"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p13",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 13,
+    "text": "Why Compound AI Systems? 1. Quality: more reliable composition of better-scoped LM capabilities 2. Control: can iteratively improve the system & ground it via tools 3. Transparency: can debug trajectories & offer user-facing attribution 4. Efficiency: can use smaller LMs, offloading knowledge & control flow 5. Inference-time Scaling: can systematically search for better outputs"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p14",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 14,
+    "text": "Recap"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p15",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 15,
+    "text": "Unfortunately, LMs are highly sensitive to how theyʼre instructed to solve tasks, so under the hood we often… Prompting..."
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p16",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 16,
+    "text": "Prompting... The usual way of writing prompts is: • you manually write a long set of instructions • you try few-shot examples • you keep revising the wording • you tune it based on experience and intuition ...."
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p17",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 17,
+    "text": "Each “prompt” couples five very different roles: • The core input → output behavior, a Signature. • The computation specializing an inference-time strategy to the signature, a Predictor. • The computation formatting the signatureʼs inputs and parsing its typed outputs, an Adapter. • The computations defining objectives and constraints on behavior, Metrics and Assertions. • The strings that instruct (or weights that adapt) the LM for desired behavior, an Optimizer. • Existing Compound AI Systems are modular in principle, but are too “stringly-typed”: they couple the fundamental system architecture with incidental choices not portable to new LMs, objectives, or pipelines. The problems"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p18",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 18,
+    "text": "• We know how to build controllable systems & improve them modularly. • That is called… programming. • What if we could abstract Compound AI Systems as programs with fuzzy natural-language-typed modules that learn their behavior? Compound AI Systems"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p19",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 19,
+    "text": "DSPy Framework"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p20",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 20,
+    "text": "DSPy Framework • What if we want to optimize the LMs of each module?"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p21",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 21,
+    "text": "DSPy Framework DSPy doesn’t ask you to hard-code a long prompt text. Instead, it breaks the task down into: • what the inputs are • what the intermediate steps are • what the output format is • which module to call at each step • how to automatically optimize based on metrics"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p22",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 22,
+    "text": "As an example, let’s say we wanted to build this simple pipeline for multi-hop retrieval-augmented generation Example"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p23",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 23,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p24",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 24,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Init method defines LM calls"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p25",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 25,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Forward method defines program logic"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p26",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 26,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Signature: what to do, not how to prompt!"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p27",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 27,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Modules define the strategy for expressing a signature"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p28",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 28,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example How can we translate these into high-quality prompts?"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p29",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 29,
+    "text": "First, modules are translated into basic prompts using Adapters and Predictors. Example self.generate_query = dspy.ChainOfThought(\"context, question -> query\") dspy.Adapter(self.generate_query) Given the fields “context” and “question”, respond with the field “query”. Follow the following format: Context: <context> Question: <question> Reasoning: Let’s think step by step to <..> Query: <query> Predefined Adapters are used to translate modules into basic prompts"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p30",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 30,
+    "text": "DSPy’s Optimizers can then tune this prompt! Given the fields “context” and “question”, respond with the field “query”. Follow the following format: Context: <context> Question: <question> Reasoning: Let’s think step by step to <..> Query: <query> ... jointly along with all other prompts in your program Example Program Score: 37% optimizer = MIPROv2() optimized_program = optimizer.compile(program) Carefully read the provided `context` and `question`. Your task is to formulate a concise and relevant `query` that could be used to retrieve information from a search engine to answer the question most effectively. The `query` should encapsulate... Follow the following format: Context: <context> Question: <question> Reasoning: Let’s think step by step to <..> Query: <query> Here are some examples: <...> Program Score: 55%"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p31",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 31,
+    "text": "Instead of tweaking a string prompt… Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: (1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search. (2) Lookup[keyword], which returns the next sentence containing keyword in the current passage. (3) Finish[answer], which returns the answer and finishes the task. Here are some examples. Question: What is the elevation range for the area that the eastern sector of the Colorado orogeny exten Thought 1: I need to search Colorado orogeny, find the area that the eastern sector of the Colorado orog elevation range of the area. Action 1: Search[Colorado orogeny] Observation 1: The Colorado orogeny was an episode of mountain building (an orogeny) in Colorado and Thought 2: It does not mention the eastern sector. So I need to look up eastern sector. Action 2: Lookup[eastern sector] Observation 2: (Result 1 / 1) The eastern sector extends into the High Plains and is called the Central Pl [... truncated …] Example 33% accuracy with GPT-3.5 on a multi- hop QA task"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p32",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 32,
+    "text": "Multi-Hop Retrieval-Augmented Generation (HotPotQA) Compiling MultiHop into a small LM (T5-770M) with DSPy’s BootstrapFinetune, starting from 200 answers, scores 39%"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p33",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 33,
+    "text": "SLMs..."
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p34",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 34,
+    "text": "DSPy Optimizers vary in how they tune the prompts & weights in a program, but at a high level they typically… • Construct an initial prompt from each module via an Adapter • Generate examples of every module via rejection sampling • Use the examples to update the programʼs modules • Automatic few-shot prompting: dspy.BootstrapFewShotWithRandomSearch • Induction of instructions: dspy.MIPROv2 • Multi-stage fine-tuning: dspy.BootstrapFinetune Optimizers"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p35",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 35,
+    "text": "Enabled many SoTA systems like PATH (Jasper Xia, UWaterloo); IReRa (Karel DʼOosterlink, UGhent), STORM (Yijia Shao, Stanford), EDEN (Siyan Li, Columbia), Efficient Agents (Sayash Kapoor, Princeton), ECG-Chat (Yubao Zhao, Beijing Normal U), …"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p36",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 36,
+    "text": "[No extractable text on this page]"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p37",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 37,
+    "text": "Problem Setting"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p38",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 38,
+    "text": "Constraints / Assumptions 1. No access to log-probs or model weights: Developers may want to optimize LM programs for use on API only models. 2. No intermediate metrics / labels: We assume no access to manual ground-truth labels for intermediate stages. 3. Budget-Conscious: We want to limit the number of input examples we require and the number of program calls we make."
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p39",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 39,
+    "text": "Key challenges Prompt Proposal: Searching over all possible strings is intractable, especially as we add in multiple modules we need to optimize. Instead, we need to propose a small set of high quality options. Credit Assignment: We need efficient ways of inferring how each prompt variable contributes to performance, so that we can find the best set for our program."
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p40",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 40,
+    "text": "LM Program: Bootstrap Few-Shot Examples Bootstrap Few-shot examples with simple rejection sampling"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p41",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 41,
+    "text": "LM Program:Training Input Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p42",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 42,
+    "text": "LM Program:Training Input Metric Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p43",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 43,
+    "text": "LM Program:Training Input Metric Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p44",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 44,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p45",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 45,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p46",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 46,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p47",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 47,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p48",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 48,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p49",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 49,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p50",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 50,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p51",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 51,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p52",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 52,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Task Demonstration Candidate Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p53",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 53,
+    "text": "LM Program: Training Input Metric using random search! Search Query Output 1 Task Demonstration Candidate Search Query Output 2 Answer Output Bootstrap Few-Shot (w/ Random Search) Search for the best set"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p54",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 54,
+    "text": "Search Query Output 1 Task Demonstration Candidate Search Query Output 2 Answer Output Bootstrap Few-Shot (w/ Random Search)"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p55",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 55,
+    "text": "Prompt Proposals “Think step by step” “Take a deep breath and think step by step” “Carefully solve the problem” “Let’s do the math” Evaluate Propose More Prompts Given prompts/scores propose more prompts. “Think step by step” Score: 31 “Take a deep breath and think step by step” Score: 42 LLM “Proposer LM” C. Yang*, X. Wang, Y. Lu, H. Liu, Q. V. Le, D. Zhou, X. Chen* “Large Language Models as Optimizers” What is OPRO? Optimization through Prompting"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p56",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 56,
+    "text": "Coordinate-Ascent OPRO Initial extension to multi- stage: CA-OPRO"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p57",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 57,
+    "text": "Key Idea: Coordinate-Ascent was expensive, maybe we don’t need explicit credit assignment? Let’s just change both prompts at a time in parallel! Module-Level OPRO"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p58",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 58,
+    "text": "Key Idea: Coordinate-Ascent was expensive, maybe we don’t need explicit credit assignment? Let’s just change both prompts at a time in parallel! Module-Level OPRO"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p59",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 59,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Training set examples (input/output pairs from training set) Grounding!"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p60",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 60,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Bootstrapped demo example: Question: The Victorians - Their Story In Pictures is a documentary series written by an author born in what year? Reasoning: Let's think step by step in order to find the search query. We need to find the author's birth year. We can search for the author's name along with the phrase \"birth year\" or \"birthday\" to get the desired information. - Their Story In Pictures birth year\" or \"author of The Victorians - Their Story In Pictures birthday\""
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p61",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 61,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Dataset summary example: \"The dataset consists of factual, trivia-style questions across a wide range of topics, presented in a clear and concise manner. These questions are likely designed for use in trivia games..” Dataset Summary (Loop over the data and use an LLM to write a summary)"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p62",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 62,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Program Summary example: “The program code appears to be designed to answer complex questions by retrieving and processing information from multiple sources or passages. In this case, the program is set up for two hops, … The module `self.generate_query` in this program is responsible for generating a search query based on the context and question provided.” Dataset Summary (Loop over the data and use an LLM to write a summary) Summary of a Reflexive View of the LM Program Code itself"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p63",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 63,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Tip example: “Don’t be afraid to be creative when generating the new instruction” “Keep the instruction clear and concise.\" “Make sure your instruction is very informative and descriptive.\" Dataset Summary (Loop over the data and use an LLM to write a summary) Summary of a Reflexive View of the LM Program Code itself Tip for instruction generation (be creative, be succinct, etc.)"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p64",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 64,
+    "text": "Prompt Proposal 1. Bootstrap Task Demonstrations 2. Propose Instruction Candidates using an LM Program Credit Assignment 3. Jointly tune with a Bayesian hyperparameter optimizer Multi-prompt Instruction PRoposal Optimizer MIPRO"
+  },
+  {
+    "id": "94582811-5f0c-4bf2-9e45-2b85eaa52f57-p65",
+    "documentId": "94582811-5f0c-4bf2-9e45-2b85eaa52f57",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 65,
+    "text": "Summary • Monolithic LMs are powerful but unreliable • → hard to control, debug, and improve • Compound AI Systems • = modular programs using LMs as components • Key benefits: quality, control, transparency, efficiency, inference-time scaling • Shift from prompt engineering → programming LM systems • DSPy framework abstracts LM pipelines into structured modules (signatures, modules, optimizers) • Automatically generates & optimizes prompts instead of manual trial-and-error • Uses techniques like bootstrapping, few-shot learning, and optimizers (e.g., MIPRO) • Enables systematic, scalable, and reliable AI development"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p1",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 1,
+    "text": "Welcome to COMPSCI 703 Generalising Artificial Intelligence Dr Hong Jia University of Auckland"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p2",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 2,
+    "text": "Compound AI Systems"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p3",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 3,
+    "text": "Impressive AI demos"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p4",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 4,
+    "text": "Reliable AI Systems Turning monolithic LMs into reliable Al systems remains challenging."
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p5",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 5,
+    "text": "Air Canada had to pay Moffatt $812.02 (£642.64) in damages and tribunal fees. \"It should be obvious to Air Canada that it is responsible for all the information on its website,\" Reliable AI Systems"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p6",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 6,
+    "text": "Every AI system will make mistakes. But the monolithic nature of LMs makes them hard to control, debug, and improve. Reliable AI Systems"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p7",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 7,
+    "text": "To tackle this, AI researchers increasingly build Compound AI Systems. Compound AI Systems: modular programs that use LMs as specialized components Compound AI Systems"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p8",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 8,
+    "text": "Literature: DrQA (Chen et al., 2017), ORQA (Lee et al., 2019), RAG (Lewis et al., 2020), ColBERT-QA (Khattab et al., 2020) Compound AI Systems i.e. modular programs that use LMs as specialized components Slides adapted from: Omar Khattab"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p9",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 9,
+    "text": "Compound AI Systems What compounds protect the digestive system? L M The stomach is protected by gastric acid and proteases. Transparency: can debug traces & offer user-facing attribution Efficiency: can use smaller LMs, offloading knowledge & control flow Literature: DrQA (Chen et al., 2017), ORQA (Lee et al., 2019), RAG (Lewis et al., 2020), ColBERT-QA (Khattab et al., 2020) Example: Retrieval-Augmented Generation i.e. modular programs that use LMs as specialized components"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p10",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 10,
+    "text": "Control: can iteratively improve the system & ground it via tools Literature: GoldEn (Qi et al., 2019), DecompRC (Min et al., 2019), MDR (Xiong et al., 2020), Baleen (Khattab et al., 2021) Example: Multi-Hop Retrieval-Augmented Generation Compound AI Systems i.e. modular programs that use LMs as specialized components"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p11",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 11,
+    "text": "Quality: more reliable composition of better-scoped LM capabilities STORM: Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models (Shao et al., 2024) “The ColBERT retriever” Example: Compositional Report Generation, i.e. brainstorming an outline, collecting references, etc. Compound AI Systems"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p12",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 12,
+    "text": "+Task-agnostic prompting strategies, e.g. Best-of- N, Chain Of Thought, Program of Thought, ReAct, Reflexion, Archon, … Inference-time Scaling: systematically searching for better outputs i.e. modular programs that use LMs as specialized components Literature: AlphaCodium (Ridnik, 2024), DIN-SQL (Pourreza & Rafiei, 2023), RARR (Gao et al., 2023), and many others Compound AI Systems"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p13",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 13,
+    "text": "Why Compound AI Systems? 1. Quality: more reliable composition of better-scoped LM capabilities 2. Control: can iteratively improve the system & ground it via tools 3. Transparency: can debug trajectories & offer user-facing attribution 4. Efficiency: can use smaller LMs, offloading knowledge & control flow 5. Inference-time Scaling: can systematically search for better outputs"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p14",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 14,
+    "text": "Recap"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p15",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 15,
+    "text": "Unfortunately, LMs are highly sensitive to how theyʼre instructed to solve tasks, so under the hood we often… Prompting..."
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p16",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 16,
+    "text": "Prompting... The usual way of writing prompts is: • you manually write a long set of instructions • you try few-shot examples • you keep revising the wording • you tune it based on experience and intuition ...."
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p17",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 17,
+    "text": "Each “prompt” couples five very different roles: • The core input → output behavior, a Signature. • The computation specializing an inference-time strategy to the signature, a Predictor. • The computation formatting the signatureʼs inputs and parsing its typed outputs, an Adapter. • The computations defining objectives and constraints on behavior, Metrics and Assertions. • The strings that instruct (or weights that adapt) the LM for desired behavior, an Optimizer. • Existing Compound AI Systems are modular in principle, but are too “stringly-typed”: they couple the fundamental system architecture with incidental choices not portable to new LMs, objectives, or pipelines. The problems"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p18",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 18,
+    "text": "• We know how to build controllable systems & improve them modularly. • That is called… programming. • What if we could abstract Compound AI Systems as programs with fuzzy natural-language-typed modules that learn their behavior? Compound AI Systems"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p19",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 19,
+    "text": "DSPy Framework"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p20",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 20,
+    "text": "DSPy Framework • What if we want to optimize the LMs of each module?"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p21",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 21,
+    "text": "DSPy Framework DSPy doesn’t ask you to hard-code a long prompt text. Instead, it breaks the task down into: • what the inputs are • what the intermediate steps are • what the output format is • which module to call at each step • how to automatically optimize based on metrics"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p22",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 22,
+    "text": "As an example, let’s say we wanted to build this simple pipeline for multi-hop retrieval-augmented generation Example"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p23",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 23,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p24",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 24,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Init method defines LM calls"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p25",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 25,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Forward method defines program logic"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p26",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 26,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Signature: what to do, not how to prompt!"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p27",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 27,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example Modules define the strategy for expressing a signature"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p28",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 28,
+    "text": "class MultiHop(dspy.Module): def __init__(self): self.generate_query = dspy.ChainOfThought(\"context, question -> query\") self.generate_answer = dspy.ChainOfThought(\"context, question -> answer\") def forward(self, question): context = [] for hop in range(2): query = self.generate_query(context, question).query context += dspy.Retrieve(k=3)(query).passages answer = self.generate_answer(context, question) return answer Example How can we translate these into high-quality prompts?"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p29",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 29,
+    "text": "First, modules are translated into basic prompts using Adapters and Predictors. Example self.generate_query = dspy.ChainOfThought(\"context, question -> query\") dspy.Adapter(self.generate_query) Given the fields “context” and “question”, respond with the field “query”. Follow the following format: Context: <context> Question: <question> Reasoning: Let’s think step by step to <..> Query: <query> Predefined Adapters are used to translate modules into basic prompts"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p30",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 30,
+    "text": "DSPy’s Optimizers can then tune this prompt! Given the fields “context” and “question”, respond with the field “query”. Follow the following format: Context: <context> Question: <question> Reasoning: Let’s think step by step to <..> Query: <query> ... jointly along with all other prompts in your program Example Program Score: 37% optimizer = MIPROv2() optimized_program = optimizer.compile(program) Carefully read the provided `context` and `question`. Your task is to formulate a concise and relevant `query` that could be used to retrieve information from a search engine to answer the question most effectively. The `query` should encapsulate... Follow the following format: Context: <context> Question: <question> Reasoning: Let’s think step by step to <..> Query: <query> Here are some examples: <...> Program Score: 55%"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p31",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 31,
+    "text": "Instead of tweaking a string prompt… Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: (1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search. (2) Lookup[keyword], which returns the next sentence containing keyword in the current passage. (3) Finish[answer], which returns the answer and finishes the task. Here are some examples. Question: What is the elevation range for the area that the eastern sector of the Colorado orogeny exten Thought 1: I need to search Colorado orogeny, find the area that the eastern sector of the Colorado orog elevation range of the area. Action 1: Search[Colorado orogeny] Observation 1: The Colorado orogeny was an episode of mountain building (an orogeny) in Colorado and Thought 2: It does not mention the eastern sector. So I need to look up eastern sector. Action 2: Lookup[eastern sector] Observation 2: (Result 1 / 1) The eastern sector extends into the High Plains and is called the Central Pl [... truncated …] Example 33% accuracy with GPT-3.5 on a multi- hop QA task"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p32",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 32,
+    "text": "Multi-Hop Retrieval-Augmented Generation (HotPotQA) Compiling MultiHop into a small LM (T5-770M) with DSPy’s BootstrapFinetune, starting from 200 answers, scores 39%"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p33",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 33,
+    "text": "SLMs..."
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p34",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 34,
+    "text": "DSPy Optimizers vary in how they tune the prompts & weights in a program, but at a high level they typically… • Construct an initial prompt from each module via an Adapter • Generate examples of every module via rejection sampling • Use the examples to update the programʼs modules • Automatic few-shot prompting: dspy.BootstrapFewShotWithRandomSearch • Induction of instructions: dspy.MIPROv2 • Multi-stage fine-tuning: dspy.BootstrapFinetune Optimizers"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p35",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 35,
+    "text": "Enabled many SoTA systems like PATH (Jasper Xia, UWaterloo); IReRa (Karel DʼOosterlink, UGhent), STORM (Yijia Shao, Stanford), EDEN (Siyan Li, Columbia), Efficient Agents (Sayash Kapoor, Princeton), ECG-Chat (Yubao Zhao, Beijing Normal U), …"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p36",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 36,
+    "text": "[No extractable text on this page]"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p37",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 37,
+    "text": "Problem Setting"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p38",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 38,
+    "text": "Constraints / Assumptions 1. No access to log-probs or model weights: Developers may want to optimize LM programs for use on API only models. 2. No intermediate metrics / labels: We assume no access to manual ground-truth labels for intermediate stages. 3. Budget-Conscious: We want to limit the number of input examples we require and the number of program calls we make."
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p39",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 39,
+    "text": "Key challenges Prompt Proposal: Searching over all possible strings is intractable, especially as we add in multiple modules we need to optimize. Instead, we need to propose a small set of high quality options. Credit Assignment: We need efficient ways of inferring how each prompt variable contributes to performance, so that we can find the best set for our program."
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p40",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 40,
+    "text": "LM Program: Bootstrap Few-Shot Examples Bootstrap Few-shot examples with simple rejection sampling"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p41",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 41,
+    "text": "LM Program:Training Input Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p42",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 42,
+    "text": "LM Program:Training Input Metric Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p43",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 43,
+    "text": "LM Program:Training Input Metric Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p44",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 44,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p45",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 45,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p46",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 46,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p47",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 47,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p48",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 48,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p49",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 49,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p50",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 50,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p51",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 51,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p52",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 52,
+    "text": "LM Program:Training Input Metric Search Query Output 1 Search Query Output 2 Task Demonstration Candidate Answer Output Bootstrap Few-Shot Examples"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p53",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 53,
+    "text": "LM Program: Training Input Metric using random search! Search Query Output 1 Task Demonstration Candidate Search Query Output 2 Answer Output Bootstrap Few-Shot (w/ Random Search) Search for the best set"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p54",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 54,
+    "text": "Search Query Output 1 Task Demonstration Candidate Search Query Output 2 Answer Output Bootstrap Few-Shot (w/ Random Search)"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p55",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 55,
+    "text": "Prompt Proposals “Think step by step” “Take a deep breath and think step by step” “Carefully solve the problem” “Let’s do the math” Evaluate Propose More Prompts Given prompts/scores propose more prompts. “Think step by step” Score: 31 “Take a deep breath and think step by step” Score: 42 LLM “Proposer LM” C. Yang*, X. Wang, Y. Lu, H. Liu, Q. V. Le, D. Zhou, X. Chen* “Large Language Models as Optimizers” What is OPRO? Optimization through Prompting"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p56",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 56,
+    "text": "Coordinate-Ascent OPRO Initial extension to multi- stage: CA-OPRO"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p57",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 57,
+    "text": "Key Idea: Coordinate-Ascent was expensive, maybe we don’t need explicit credit assignment? Let’s just change both prompts at a time in parallel! Module-Level OPRO"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p58",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 58,
+    "text": "Key Idea: Coordinate-Ascent was expensive, maybe we don’t need explicit credit assignment? Let’s just change both prompts at a time in parallel! Module-Level OPRO"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p59",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 59,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Training set examples (input/output pairs from training set) Grounding!"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p60",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 60,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Bootstrapped demo example: Question: The Victorians - Their Story In Pictures is a documentary series written by an author born in what year? Reasoning: Let's think step by step in order to find the search query. We need to find the author's birth year. We can search for the author's name along with the phrase \"birth year\" or \"birthday\" to get the desired information. - Their Story In Pictures birth year\" or \"author of The Victorians - Their Story In Pictures birthday\""
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p61",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 61,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Dataset summary example: \"The dataset consists of factual, trivia-style questions across a wide range of topics, presented in a clear and concise manner. These questions are likely designed for use in trivia games..” Dataset Summary (Loop over the data and use an LLM to write a summary)"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p62",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 62,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Program Summary example: “The program code appears to be designed to answer complex questions by retrieving and processing information from multiple sources or passages. In this case, the program is set up for two hops, … The module `self.generate_query` in this program is responsible for generating a search query based on the context and question provided.” Dataset Summary (Loop over the data and use an LLM to write a summary) Summary of a Reflexive View of the LM Program Code itself"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p63",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 63,
+    "text": "Hypothesis: Providing our proposer LM with more information relevant to the task can help us propose better instructions. History of Instructions and Scores (and static task demos) New Instruction Proposer LM LL M Bootstrapped demos demos for a particular module in program Finally, Grounding! Tip example: “Don’t be afraid to be creative when generating the new instruction” “Keep the instruction clear and concise.\" “Make sure your instruction is very informative and descriptive.\" Dataset Summary (Loop over the data and use an LLM to write a summary) Summary of a Reflexive View of the LM Program Code itself Tip for instruction generation (be creative, be succinct, etc.)"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p64",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 64,
+    "text": "Prompt Proposal 1. Bootstrap Task Demonstrations 2. Propose Instruction Candidates using an LM Program Credit Assignment 3. Jointly tune with a Bayesian hyperparameter optimizer Multi-prompt Instruction PRoposal Optimizer MIPRO"
+  },
+  {
+    "id": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920-p65",
+    "documentId": "cc9bd05b-4db7-4938-b6c7-7ebbe7578920",
+    "fileName": "Week8.1_Compound_AI_Systems.pdf",
+    "page": 65,
+    "text": "Summary • Monolithic LMs are powerful but unreliable • → hard to control, debug, and improve • Compound AI Systems • = modular programs using LMs as components • Key benefits: quality, control, transparency, efficiency, inference-time scaling • Shift from prompt engineering → programming LM systems • DSPy framework abstracts LM pipelines into structured modules (signatures, modules, optimizers) • Automatically generates & optimizes prompts instead of manual trial-and-error • Uses techniques like bootstrapping, few-shot learning, and optimizers (e.g., MIPRO) • Enables systematic, scalable, and reliable AI development"
+  }
+]
