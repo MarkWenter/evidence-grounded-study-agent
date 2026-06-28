@@ -79,25 +79,25 @@ export default function UploadPanel({ onUploadSuccess }: UploadPanelProps) {
   }
 
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-      <h2 className="text-lg font-semibold text-slate-900">Upload lecture PDF</h2>
-      <p className="mt-2 text-sm text-slate-600">
+    <section className="ui-card">
+      <h2 className="ui-section-title">Upload lecture PDF</h2>
+      <p className="ui-section-hint">
         Upload a PDF to extract page-level text and store chunk metadata locally.
       </p>
       <form
         onSubmit={(event) => {
           void handleUpload(event);
         }}
-        className="mt-4 rounded-lg border border-dashed border-slate-300 bg-slate-50 p-6 text-sm text-slate-600"
+        className="mt-4 rounded-xl border border-dashed border-sky-200 bg-sky-50/40 p-6 text-sm text-slate-700"
       >
-        <label className="block text-sm font-medium text-slate-700" htmlFor="pdf-file">
+        <label className="ui-label block" htmlFor="pdf-file">
           Choose PDF file
         </label>
         <input
           id="pdf-file"
           type="file"
           accept="application/pdf,.pdf"
-          className="mt-2 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-800"
+          className="ui-input mt-2"
           onChange={(event) => {
             const nextFile = event.target.files?.[0] ?? null;
             setSelectedFile(nextFile);
@@ -110,18 +110,21 @@ export default function UploadPanel({ onUploadSuccess }: UploadPanelProps) {
         <button
           type="submit"
           disabled={status === "uploading" || !selectedFile}
-          className="mt-4 rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white disabled:cursor-not-allowed disabled:bg-slate-400"
+          className="ui-button-primary mt-4"
         >
           {status === "uploading" ? "Uploading..." : "Upload PDF"}
         </button>
 
-        <p className="mt-3 text-sm text-slate-700">Status: {status}</p>
+        <p className="ui-status-line">
+          <span className="ui-badge">Status</span>
+          <span className="font-medium capitalize">{status}</span>
+        </p>
         <p className="mt-1 text-sm text-slate-700">{message}</p>
 
         {result ? (
-          <div className="mt-3 rounded-md border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-800">
-            <p>File: {result.fileName}</p>
-            <p>Extracted pages/chunks: {result.chunkCount}</p>
+          <div className="mt-3 rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-800">
+            <p className="font-medium">File: {result.fileName}</p>
+            <p className="mt-1">Extracted pages/chunks: {result.chunkCount}</p>
           </div>
         ) : null}
       </form>

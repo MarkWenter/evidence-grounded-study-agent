@@ -18,6 +18,9 @@ export interface EvidenceItem {
   page: number;
   textSnippet: string;
   score?: number;
+  rank?: number;
+  matchedTerms?: string[];
+  selectionReason?: string;
 }
 
 export interface AgentTraceStep {
@@ -29,11 +32,16 @@ export interface AgentTraceStep {
 }
 
 export type ConfidenceLevel = "high" | "medium" | "low";
+export type AnswerMode = "study" | "assessment_safe";
 
 export interface VerificationResult {
   supported: boolean;
   confidence: ConfidenceLevel;
   reason: string;
+  evidenceCount?: number;
+  averageEvidenceScore?: number;
+  citationPresent?: boolean;
+  ruleApplied?: string;
 }
 
 export interface AnswerResult {
@@ -44,6 +52,7 @@ export interface AnswerResult {
   message?: string;
   verification?: VerificationResult;
   finalAnswer?: string;
+  mode?: AnswerMode;
 }
 
 export interface RetrievalResult {

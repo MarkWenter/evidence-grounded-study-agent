@@ -10,7 +10,7 @@ import {
 import { generateGroundedAnswer } from "@/lib/llm";
 import { retrieveRelevantChunks } from "@/lib/retriever";
 import { readChunks } from "@/lib/storage";
-import type { AgentTraceStep, VerificationResult } from "@/lib/types";
+import type { AgentTraceStep, AnswerMode, VerificationResult } from "@/lib/types";
 import {
   getRefusalMessage,
   shouldRefuseAnswer,
@@ -24,15 +24,29 @@ const MAX_TOP_K = 20;
 
 interface AskRequestBody {
   query?: unknown;
+  question?: unknown;
   topK?: unknown;
+  mode?: unknown;
+}
+
+function parseAnswerMode(value: unknown): AnswerMode {
+  return value === "assessment_safe" ? "assessment_safe" : "study";
 }
 
 export async function POST(request: Request) {
   const agentTrace: AgentTraceStep[] = [];
+  let mode: AnswerMode = "study";
 
   try {
     const body = (await request.json()) as AskRequestBody;
-    const query = typeof body.query === "string" ? body.query.trim() : "";
+    const queryRaw =
+      typeof body.query === "string"
+        ? body.query
+        : typeof body.question === "string"
+          ? body.question
+          : "";
+    const query = queryRaw.trim();
+    mode = parseAnswerMode(body.mode);
 
     if (!query) {
       return NextResponse.json(
@@ -50,7 +64,7 @@ export async function POST(request: Request) {
         : DEFAULT_TOP_K;
     const topK = Math.min(Math.max(requestedTopK, 1), MAX_TOP_K);
 
-    agentTrace.push(createPlanTraceStep(query, topK));
+    agentTrace.push(createPlanTraceStep(query, topK, mode));
 
     const chunks = await readChunks();
     const totalChunksSearched = chunks.length;
@@ -60,6 +74,10 @@ export async function POST(request: Request) {
         supported: false,
         confidence: "low",
         reason: "No uploaded document chunks are available for verification.",
+        evidenceCount: 0,
+        averageEvidenceScore: 0,
+        citationPresent: false,
+        ruleApplied: "no_chunks_available",
       };
 
       agentTrace.push(createRetrieveTraceStep(totalChunksSearched, 0));
@@ -70,6 +88,7 @@ export async function POST(request: Request) {
       return NextResponse.json({
         success: true,
         query,
+        mode,
         answer: "No uploaded document chunks are available. Please upload a PDF first.",
         evidence: [],
         verification,
@@ -86,6 +105,10 @@ export async function POST(request: Request) {
         supported: false,
         confidence: "low",
         reason: "No relevant evidence was retrieved for this question.",
+        evidenceCount: 0,
+        averageEvidenceScore: 0,
+        citationPresent: false,
+        ruleApplied: "no_relevant_evidence",
       };
 
       agentTrace.push(createGenerateTraceStep(false, 0));
@@ -97,6 +120,7 @@ export async function POST(request: Request) {
       return NextResponse.json({
         success: true,
         query,
+        mode,
         answer:
           "The uploaded materials do not provide enough relevant evidence to answer this question.",
         evidence: [],
@@ -106,7 +130,7 @@ export async function POST(request: Request) {
       });
     }
 
-    const groundedAnswer = await generateGroundedAnswer(query, evidence);
+    const groundedAnswer = await generateGroundedAnswer(query, evidence, mode);
     agentTrace.push(createGenerateTraceStep(true, evidence.length, groundedAnswer.model));
 
     const verification = verifyAnswerSupport(query, groundedAnswer.answer, evidence);
@@ -128,6 +152,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       query,
+      mode,
       answer: finalAnswer,
       evidence: groundedAnswer.evidence,
       verification,
@@ -152,6 +177,10 @@ export async function POST(request: Request) {
             supported: false,
             confidence: "low",
             reason: message,
+            evidenceCount: 0,
+            averageEvidenceScore: 0,
+            citationPresent: false,
+            ruleApplied: "generation_or_runtime_error",
           },
           false,
         ),

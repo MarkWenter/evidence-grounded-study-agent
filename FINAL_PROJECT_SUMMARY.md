@@ -4,6 +4,11 @@
 
 Evidence-Grounded Study Agent is a COMPSCI 703 AGI Venture Project MVP that answers study questions from uploaded course PDFs with page-grounded evidence.
 
+The system supports two response modes:
+
+- Study Mode for direct evidence-grounded explanations
+- Assessment-safe Hint Mode for guided learning support without direct final answers
+
 ## 2. Revenue Leak Addressed
 
 Students lose study time by manually searching lecture slides and by re-checking ungrounded AI answers. The prototype reduces this time leak by giving cited, source-linked responses.
@@ -42,8 +47,24 @@ The system does not perform a single opaque generation call. It executes structu
 - Page-level evidence retrieval before answer generation
 - Citation requirement in answer output
 - Verification output: supported, confidence, reason
+- Verification transparency fields: evidenceCount, averageEvidenceScore, citationPresent, ruleApplied
+- Evidence transparency fields: rank, matchedTerms, selectionReason, and supporting snippet
 - Evidence-based refusal for unsupported or low-confidence cases
+- Assessment-safe Hint Mode to reduce assignment-answer generation risk
 - Transparent agent trace for debugging and trust
+
+### Verification Rule Table
+
+The current verifier is rule-based and lightweight. It does not perform claim-level semantic proof.
+
+| Condition | Outcome | Confidence | Interpretation |
+|---|---|---|---|
+| No evidence or empty answer | unsupported | low | Insufficient support to answer safely |
+| Missing citation format | unsupported | low | Evidence linkage is not explicit enough |
+| Low average retrieval score (< 1.5) | unsupported | low | Retrieved context is treated as weak |
+| One cited supporting chunk | supported | medium | Basic support present |
+| Multiple cited chunks with strong average score (>= 3) | supported | high | Stronger support from multiple evidence items |
+| Multiple cited chunks with moderate average score (>= 1.5 and < 3) | supported | medium | Supported but not high-confidence |
 
 ## 7. Evaluation Approach
 
@@ -63,7 +84,9 @@ Evaluation dimensions include retrieval relevance, citation presence, grounding 
 - No vector database
 - No user accounts or personalization
 - Heuristic verification logic
+- Verification is rule-based rather than semantic entailment
 - Live LLM phrasing may vary by run
+- Assessment-safe behavior is mode-based and user-selected, not automatic intent detection
 
 ## 9. Future Work
 
@@ -79,3 +102,14 @@ Evaluation dimensions include retrieval relevance, citation presence, grounding 
 - Reduces trust gap by showing citations and traceable execution
 - Supports B2C learning tools and institutional pilot deployments
 - Provides a practical foundation for grounded educational AI assistants
+
+## 11. Peer Feedback Integration
+
+Peer feedback from later review rounds directly shaped Steps 9 to 12:
+
+- Step 9: expanded evaluation scope, metrics, and templates
+- Step 10: verifier transparency and confidence explanation
+- Step 11: evidence ranking and source-selection explainability
+- Step 12: Study Mode plus Assessment-safe Hint Mode
+
+Remaining items such as GraphRAG, claim-level citation matching, automated benchmark pipelines, and lecturer-facing analytics are intentionally kept as future work to preserve MVP stability and scope discipline.

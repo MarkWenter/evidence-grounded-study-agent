@@ -2,6 +2,7 @@ import type { ChunkRecord, EvidenceItem } from "./types";
 
 const DEFAULT_TOP_K = 5;
 const MAX_SNIPPET_CHARS = 360;
+const MAX_MATCHED_TERMS = 10;
 
 const STOPWORDS = new Set([
   "a",
@@ -41,6 +42,20 @@ function tokenize(text: string): string[] {
   return normalize(text)
     .match(/[a-z0-9]+/g)
     ?.filter((token) => !STOPWORDS.has(token)) ?? [];
+}
+
+function uniqueTermsInOrder(terms: string[]): string[] {
+  const seen = new Set<string>();
+  const unique: string[] = [];
+
+  for (const term of terms) {
+    if (!seen.has(term)) {
+      seen.add(term);
+      unique.push(term);
+    }
+  }
+
+  return unique;
 }
 
 function countTokens(tokens: string[]): Map<string, number> {
@@ -95,6 +110,40 @@ function scoreChunk(queryTerms: string[], chunkText: string, query: string): num
   return score;
 }
 
+function extractMatchedTerms(queryTerms: string[], chunkText: string): string[] {
+  const chunkTokenSet = new Set(tokenize(chunkText));
+  const uniqueQueryTerms = uniqueTermsInOrder(queryTerms);
+
+  return uniqueQueryTerms
+    .filter((term) => chunkTokenSet.has(term))
+    .slice(0, MAX_MATCHED_TERMS);
+}
+
+function createSelectionReason(
+  score: number,
+  matchedTerms: string[],
+  query: string,
+  chunkText: string,
+): string {
+  const normalizedChunk = normalize(chunkText);
+  const normalizedQuery = normalize(query).trim();
+  const directPhraseMatch = normalizedQuery.length > 2 && normalizedChunk.includes(normalizedQuery);
+
+  if (directPhraseMatch) {
+    return "This source was ranked highly because it contains a direct phrase match with the question.";
+  }
+
+  if (score >= 5 || matchedTerms.length >= 4) {
+    return "This source was ranked highly because it matches several key query terms.";
+  }
+
+  if (score >= 3 || matchedTerms.length >= 2) {
+    return "This source is relevant because it has multiple keyword overlaps with the question.";
+  }
+
+  return "This source is included as supporting context due to partial keyword overlap.";
+}
+
 export async function retrieveRelevantChunks(
   question: string,
   chunks: ChunkRecord[],
@@ -127,11 +176,18 @@ export async function retrieveRelevantChunks(
     })
     .slice(0, topK);
 
-  return ranked.map(({ chunk, score }) => ({
-    chunkId: chunk.id,
-    fileName: chunk.fileName,
-    page: chunk.page,
-    textSnippet: createSnippet(chunk.text, queryTerms),
-    score,
-  }));
+  return ranked.map(({ chunk, score }, index) => {
+    const matchedTerms = extractMatchedTerms(queryTerms, chunk.text);
+
+    return {
+      chunkId: chunk.id,
+      fileName: chunk.fileName,
+      page: chunk.page,
+      textSnippet: createSnippet(chunk.text, queryTerms),
+      score,
+      rank: index + 1,
+      matchedTerms,
+      selectionReason: createSelectionReason(score, matchedTerms, question, chunk.text),
+    };
+  });
 }

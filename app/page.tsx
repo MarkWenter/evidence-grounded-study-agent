@@ -8,7 +8,12 @@ import EvidenceList from "@/components/EvidenceList";
 import QuestionPanel from "@/components/QuestionPanel";
 import type { AskViewModel } from "@/components/QuestionPanel";
 import UploadPanel from "@/components/UploadPanel";
-import type { AgentTraceStep, EvidenceItem, VerificationResult } from "@/lib/types";
+import type {
+  AgentTraceStep,
+  AnswerMode,
+  EvidenceItem,
+  VerificationResult,
+} from "@/lib/types";
 
 interface UploadedDocumentItem {
   id: string;
@@ -28,6 +33,7 @@ export default function Home() {
   const [answer, setAnswer] = useState<string>("");
   const [answerMessage, setAnswerMessage] = useState<string>("");
   const [answerModel, setAnswerModel] = useState<string>("");
+  const [answerMode, setAnswerMode] = useState<AnswerMode | undefined>(undefined);
   const [hasAskedQuestion, setHasAskedQuestion] = useState<boolean>(false);
   const [answerError, setAnswerError] = useState<boolean>(false);
   const [agentTrace, setAgentTrace] = useState<AgentTraceStep[]>([]);
@@ -113,18 +119,18 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      <main className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 lg:px-8">
-        <header className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+    <div className="ui-page">
+      <main className="ui-shell">
+        <header className="ui-header">
+          <h1 className="ui-title">
             Evidence-Grounded Study Agent
           </h1>
-          <p className="mt-2 text-slate-600">
+          <p className="ui-subtitle">
             A compound AI system for page-cited course material question answering.
           </p>
         </header>
 
-        <section className="grid gap-6 lg:grid-cols-2">
+        <section className="ui-grid-top">
           <UploadPanel
             onUploadSuccess={() => {
               refreshDocuments();
@@ -140,6 +146,7 @@ export default function Home() {
               setAnswer(result.answer);
               setAnswerMessage(result.message);
               setAnswerModel(result.model ?? "");
+              setAnswerMode(result.mode);
               setAgentTrace(result.agentTrace);
               setVerification(result.verification);
               setAnswerError(!result.answer && !!result.message);
@@ -147,9 +154,9 @@ export default function Home() {
           />
         </section>
 
-        <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-semibold text-slate-900">Uploaded Documents</h2>
-          <p className="mt-2 text-sm text-slate-600">
+        <section className="ui-card">
+          <h2 className="ui-section-title">Uploaded Documents</h2>
+          <p className="ui-section-hint">
             Stored from local JSON records in data/documents.json and data/chunks.json.
           </p>
 
@@ -162,11 +169,16 @@ export default function Home() {
               {documents.map((document) => (
                 <li
                   key={document.id}
-                  className="rounded-md border border-slate-200 bg-slate-50 p-3"
+                  className="ui-card-soft"
                 >
-                  <p>File: {document.fileName}</p>
-                  <p>Uploaded at: {new Date(document.uploadedAt).toLocaleString()}</p>
-                  <p>Chunk count: {document.chunkCount}</p>
+                  <p className="ui-status-line mt-0">
+                    <span className="ui-badge">Document</span>
+                    <span className="font-medium text-slate-800">{document.fileName}</span>
+                  </p>
+                  <p className="mt-2 text-sm text-slate-700">
+                    Uploaded at: {new Date(document.uploadedAt).toLocaleString()}
+                  </p>
+                  <p className="mt-1 text-sm text-slate-700">Chunk count: {document.chunkCount}</p>
                 </li>
               ))}
             </ul>
@@ -177,19 +189,20 @@ export default function Home() {
           ) : null}
         </section>
 
-        <section className="grid gap-6 lg:grid-cols-2">
+        <section className="ui-grid-main">
           <AgentTrace trace={agentTrace} />
           <AnswerCard
             answer={answer}
             hasAsked={hasAskedQuestion}
             message={answerMessage}
             model={answerModel}
+            mode={answerMode}
             isError={answerError}
             verification={verification}
           />
         </section>
 
-        <section>
+        <section className="w-full">
           <EvidenceList
             evidence={retrievedEvidence}
             hasSearched={hasSearchedEvidence}

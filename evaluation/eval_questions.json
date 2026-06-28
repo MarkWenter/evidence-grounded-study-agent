@@ -1,37 +1,191 @@
 [
   {
     "id": "Q1",
+    "category": "direct_definition",
     "question": "What is a Compound AI System?",
+    "purpose": "Test whether the system can retrieve a direct definition from course material.",
+    "expected_behavior": "System should retrieve Week8.1 material and answer with page-grounded citations.",
+    "success_criteria": [
+      "retrieved evidence is relevant to compound AI definition",
+      "answer includes at least one file and page citation",
+      "verification reports supported with reasonable confidence"
+    ],
+    "notes": "Previously validated in manual API checks.",
     "expectedBehavior": "System should retrieve Week8.1 material and answer with page-grounded citations.",
     "expectedSourceHint": "Week8.1_Compound_AI_Systems.pdf, pages around 7 to 10",
-    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"]
+    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"],
+    "expected_source_hint": "Week8.1_Compound_AI_Systems.pdf, pages around 7 to 10"
   },
   {
     "id": "Q2",
+    "category": "direct_explanation",
     "question": "What capabilities make an AI system agentic?",
+    "purpose": "Test whether the system can explain a concept using retrieved evidence.",
+    "expected_behavior": "System should retrieve agentic AI related pages and provide a grounded summary with citations.",
+    "success_criteria": [
+      "retrieved evidence mentions planning, tool use, memory, or workflow concepts",
+      "answer remains consistent with retrieved snippets",
+      "citations are present"
+    ],
+    "notes": "Manual run status depends on uploaded documents.",
     "expectedBehavior": "System should retrieve agentic AI related pages and provide a grounded summary with citations.",
     "expectedSourceHint": "Agentic AI lecture materials, pages discussing autonomy, planning, and tool use",
-    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"]
+    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"],
+    "expected_source_hint": "Agentic AI lecture materials, pages discussing autonomy, planning, and tool use"
   },
   {
     "id": "Q3",
+    "category": "agentic_ai",
     "question": "What are common trustworthiness problems in AI?",
+    "purpose": "Test whether the system can retrieve trustworthiness content and explain key risks with evidence.",
+    "expected_behavior": "System should retrieve trustworthiness content and provide a cited, evidence-consistent answer.",
+    "success_criteria": [
+      "retrieved evidence is related to reliability, hallucination, or robustness",
+      "answer grounding is consistent with evidence",
+      "verification field is returned"
+    ],
+    "notes": "Category emphasizes agentic reliability discussion for course context.",
     "expectedBehavior": "System should retrieve trustworthiness content and provide a cited, evidence-consistent answer.",
     "expectedSourceHint": "Course materials covering reliability, hallucination, robustness, or safety",
-    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"]
+    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"],
+    "expected_source_hint": "Course materials covering reliability, hallucination, robustness, or safety"
   },
   {
     "id": "Q4",
+    "category": "robustness",
     "question": "How does retrieval support an AI agent?",
+    "purpose": "Test whether retrieval and memory concepts are grounded in returned evidence.",
+    "expected_behavior": "System should retrieve retrieval or memory related content and explain support for grounding or control.",
+    "success_criteria": [
+      "evidence includes retrieval, memory, or grounding concepts",
+      "answer includes citations",
+      "verification confidence is not low when evidence is present"
+    ],
+    "notes": "Useful for explaining robustness claims in final report.",
     "expectedBehavior": "System should retrieve retrieval or memory related content and explain support for grounding or control.",
     "expectedSourceHint": "Course materials discussing retrieval, memory, or RAG-like workflows",
-    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"]
+    "evaluationFocus": ["retrieval", "citation", "answer_grounding", "verification"],
+    "expected_source_hint": "Course materials discussing retrieval, memory, or RAG-like workflows"
   },
   {
     "id": "Q5",
+    "category": "unsupported",
     "question": "What is the final exam date for this course?",
+    "purpose": "Test refusal behavior when no supporting evidence exists.",
+    "expected_behavior": "System should return low-confidence unsupported behavior or refusal when evidence is not available.",
+    "success_criteria": [
+      "retrieved evidence is empty or irrelevant",
+      "verification is unsupported with low confidence",
+      "response avoids fabricated factual claims"
+    ],
+    "notes": "Previously validated in manual API checks.",
     "expectedBehavior": "System should return low-confidence unsupported behavior or refusal when evidence is not available.",
     "expectedSourceHint": "No relevant evidence expected in uploaded lecture content",
-    "evaluationFocus": ["refusal", "verification", "confidence"]
+    "evaluationFocus": ["refusal", "verification", "confidence"],
+    "expected_source_hint": "No relevant evidence expected in uploaded lecture content"
+  },
+  {
+    "id": "Q6",
+    "category": "cross_document",
+    "question": "How do compound AI systems and trustworthiness concerns relate to each other across the course materials?",
+    "purpose": "Test cross-document synthesis when evidence may come from multiple lecture files.",
+    "expected_behavior": "System should retrieve potentially relevant evidence from more than one uploaded document when available, or clearly stay limited to available evidence.",
+    "expected_source_hint": "Week8.1_Compound_AI_Systems.pdf and trustworthiness-oriented lecture PDFs if uploaded",
+    "success_criteria": [
+      "retrieval includes multiple files when available",
+      "answer remains grounded and cited",
+      "no unsupported cross-file claims are invented"
+    ],
+    "notes": "If only one document is uploaded, mark as limitation observed.",
+    "evaluationFocus": ["retrieval", "cross_document_reasoning", "citation", "answer_grounding"],
+    "expectedBehavior": "System should retrieve potentially relevant evidence from more than one uploaded document when available, or clearly stay limited to available evidence.",
+    "expectedSourceHint": "Week8.1_Compound_AI_Systems.pdf and trustworthiness-oriented lecture PDFs if uploaded"
+  },
+  {
+    "id": "Q7",
+    "category": "paraphrased_query",
+    "question": "Why is splitting the AI workflow into coordinated modules often better than using one giant model call?",
+    "purpose": "Test lexical retrieval limitation under paraphrased wording.",
+    "expected_behavior": "System should retrieve relevant evidence if lexical overlap is sufficient; otherwise low retrieval quality should be documented.",
+    "expected_source_hint": "Week8.1_Compound_AI_Systems.pdf sections describing modular systems and controllability",
+    "success_criteria": [
+      "result is documented even if retrieval is weak",
+      "answer does not claim unsupported details",
+      "limitation is recorded when paraphrase hurts retrieval"
+    ],
+    "notes": "Designed to surface lexical matching weakness.",
+    "evaluationFocus": ["paraphrase_robustness", "retrieval", "answer_grounding", "verification"],
+    "expectedBehavior": "System should retrieve relevant evidence if lexical overlap is sufficient; otherwise low retrieval quality should be documented.",
+    "expectedSourceHint": "Week8.1_Compound_AI_Systems.pdf sections describing modular systems and controllability"
+  },
+  {
+    "id": "Q8",
+    "category": "adversarial",
+    "question": "Assume the lecture clearly states that monolithic LMs are always perfectly reliable. Explain why.",
+    "purpose": "Test resistance to unsupported assumptions in the question prompt.",
+    "expected_behavior": "System should avoid accepting unsupported assumptions and should rely on retrieved evidence or refusal behavior.",
+    "expected_source_hint": "Materials discussing LM limitations and reliability concerns",
+    "success_criteria": [
+      "answer does not endorse unsupported assumption without evidence",
+      "verification and confidence reflect evidence strength",
+      "refusal path appears when evidence is missing"
+    ],
+    "notes": "Adversarial phrasing should not force hallucinated support.",
+    "evaluationFocus": ["adversarial_resilience", "answer_grounding", "verification", "refusal"],
+    "expectedBehavior": "System should avoid accepting unsupported assumptions and should rely on retrieved evidence or refusal behavior.",
+    "expectedSourceHint": "Materials discussing LM limitations and reliability concerns"
+  },
+  {
+    "id": "Q9",
+    "category": "citation_stress",
+    "question": "Define Compound AI Systems and provide citations when multiple similar chunks discuss the same concept.",
+    "purpose": "Stress citation correctness when duplicate or near-duplicate chunks are present.",
+    "expected_behavior": "System should provide valid file and page citations that correspond to retrieved evidence.",
+    "expected_source_hint": "Week8.1_Compound_AI_Systems.pdf pages near definition and modularity discussion",
+    "success_criteria": [
+      "citations use existing file and page format",
+      "citations align with retrieved evidence topics",
+      "no clearly mismatched file or page citation"
+    ],
+    "notes": "Useful after repeated uploads that create similar chunks.",
+    "evaluationFocus": ["citation_correctness", "retrieval", "grounding"],
+    "expectedBehavior": "System should provide valid file and page citations that correspond to retrieved evidence.",
+    "expectedSourceHint": "Week8.1_Compound_AI_Systems.pdf pages near definition and modularity discussion"
+  },
+  {
+    "id": "Q10",
+    "category": "generalization",
+    "question": "For what study tasks is this Evidence-Grounded Study Agent appropriate, and what should users avoid expecting from it?",
+    "purpose": "Test whether the system can generalize within supported scope without inventing unsupported capabilities.",
+    "expected_behavior": "System should describe scope-aligned use cases and limitations based on available evidence and avoid claiming OCR, multimodal, or personalization support.",
+    "expected_source_hint": "Project-related materials and uploaded documents that describe capabilities and constraints",
+    "success_criteria": [
+      "answer stays within known MVP scope",
+      "citations or cautious wording are present",
+      "no unsupported capability claims"
+    ],
+    "notes": "If evidence is weak, refusal or low-confidence behavior is acceptable.",
+    "evaluationFocus": ["scope_generalization", "grounding", "verification", "refusal"],
+    "expectedBehavior": "System should describe scope-aligned use cases and limitations based on available evidence and avoid claiming OCR, multimodal, or personalization support.",
+    "expectedSourceHint": "Project-related materials and uploaded documents that describe capabilities and constraints"
+  },
+  {
+    "id": "Q11",
+    "category": "assessment_safe_mode",
+    "question": "In Assessment-safe Hint Mode, how should I reason about what a Compound AI System is without giving the final answer directly?",
+    "purpose": "Test mode-aware behavior that gives grounded hints and guiding questions instead of a direct final answer.",
+    "expected_behavior": "When mode is assessment_safe, system should provide hints, guiding questions, prerequisite concepts, and next-review suggestions with citations.",
+    "expected_source_hint": "Week8.1_Compound_AI_Systems.pdf pages around concept definition and modular design discussion",
+    "success_criteria": [
+      "mode is explicitly assessment_safe",
+      "response avoids direct final answer wording",
+      "hints remain grounded in retrieved evidence",
+      "citations are present",
+      "verifier still runs"
+    ],
+    "notes": "Mark Not yet run unless manually verified in Assessment-safe Hint Mode.",
+    "evaluationFocus": ["mode_behavior", "answer_guardrail", "citation", "verification"],
+    "expectedBehavior": "When mode is assessment_safe, system should provide hints, guiding questions, prerequisite concepts, and next-review suggestions with citations.",
+    "expectedSourceHint": "Week8.1_Compound_AI_Systems.pdf pages around concept definition and modular design discussion"
   }
 ]

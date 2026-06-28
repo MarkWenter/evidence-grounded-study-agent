@@ -1,47 +1,43 @@
 # Manual Evaluation Checklist
 
-Use this checklist to run the Step 7 lightweight evaluation.
+Use this checklist before demo or final report submission.
 
-## 1. Start the App
+## A. Setup Checklist
 
-1. Run npm run dev.
-2. Confirm the app is reachable at http://localhost:3000.
+1. Install dependencies with npm install.
+2. Configure .env.local with GEMINI_API_KEY=【api】.
+3. Start the app with npm run dev.
+4. Upload relevant course PDFs required by evaluation questions.
 
-## 2. Environment
+## B. Functional Checklist
 
-1. Ensure .env.local includes:
+1. PDF upload works successfully.
+2. Uploaded documents appear in the document list.
+3. Retrieval returns evidence for relevant questions.
+4. Ask endpoint returns an answer for supported questions.
+5. Answer includes at least one file and page citation when evidence is available.
+6. Evidence list displays file name and page number.
+7. Agent Trace shows Plan, Retrieve, Generate, Verify, Respond.
+8. Verifier returns supported, confidence, and reason fields.
+9. Unsupported question triggers refusal-style or low-confidence unsupported behavior.
+10. Study Mode returns direct evidence-grounded explanation behavior.
+11. Assessment-safe Hint Mode returns hints and guiding questions without a direct final answer.
 
-GEMINI_API_KEY=【api】
+## C. Evaluation Checklist
 
-2. Restart dev server after environment changes.
+1. Run all questions in evaluation/eval_questions.json manually.
+2. Record top retrieved evidence for each question.
+3. Record whether citations are correct.
+4. Record whether answer is grounded in retrieved evidence.
+5. Record verifier result and confidence appropriateness.
+6. Record refusal correctness for unsupported or adversarial questions.
+7. Record mode behavior correctness for Study Mode and Assessment-safe Hint Mode.
+8. Update evaluation/eval_results.md with completed and not-yet-run status honestly.
 
-## 3. Upload Required Documents
+## D. Report Checklist
 
-1. Upload the required course PDFs from the homepage.
-2. Confirm documents appear in Uploaded Documents with chunk counts.
-
-## 4. Run Questions
-
-1. Open evaluation/eval_questions.json.
-2. Ask each question using the Ask panel.
-
-## 5. Record for Each Question
-
-1. Top retrieved evidence file and page.
-2. Whether citation appears in answer text.
-3. verification.supported value.
-4. verification.confidence value.
-5. verification.reason text.
-6. Whether response behavior matches expectedBehavior.
-
-## 6. Refusal Check
-
-1. Run Q5 or another unsupported question.
-2. Confirm no relevant evidence is retrieved or support is low.
-3. Confirm low confidence and unsupported verification or refusal-style response.
-
-## 7. Save Results
-
-1. Update evaluation/eval_results.md.
-2. Keep notes concise and avoid pasting large raw model outputs.
-3. Do not include API keys in any logs or reports.
+1. Include the evaluation result table in final report materials.
+2. Discuss limitations honestly.
+3. Explain why unsupported refusal behavior is a safety strength.
+4. Mention lexical retrieval limitations for paraphrased queries.
+5. Mention future work: hybrid retrieval, GraphRAG, claim-level citation checks, and user study.

@@ -1,13 +1,24 @@
 import type { AgentTraceStep } from "./types";
 import type { VerificationResult } from "./types";
+import type { AnswerMode } from "./types";
 
-export function createPlanTraceStep(query: string, topK: number): AgentTraceStep {
+export function createPlanTraceStep(
+  query: string,
+  topK: number,
+  mode: AnswerMode = "study",
+): AgentTraceStep {
+  const modeLabel = mode === "assessment_safe" ? "Assessment-safe Hint Mode" : "Study Mode";
+  const modeNote =
+    mode === "assessment_safe"
+      ? "The system will provide hints and guiding questions instead of a direct final answer."
+      : "The system will provide a direct evidence-grounded explanation.";
+
   return {
     step: 1,
     title: "Plan",
     description: "Analyze the question and prepare an evidence-grounded workflow.",
     status: "completed",
-    details: `Question length: ${query.length} characters. Retrieval topK set to ${topK}.`,
+    details: `Question length: ${query.length} characters. Retrieval topK set to ${topK}. Mode selected: ${modeLabel}. ${modeNote}`,
   };
 }
 
@@ -82,7 +93,7 @@ export function createVerifyTraceStep(
       : verification.confidence === "low"
         ? "warning"
         : "error",
-    details: `Supported: ${verification.supported}. Confidence: ${verification.confidence}. ${verification.reason}`,
+    details: `Supported: ${verification.supported}. Confidence: ${verification.confidence}. Rule: ${verification.ruleApplied ?? "n/a"}. ${verification.reason}`,
   };
 }
 

@@ -27,6 +27,9 @@ Expected point:
 
 ### Demo 2: Ask Supported Question
 
+Mode:
+- Study Mode
+
 Question:
 - What is a Compound AI System?
 
@@ -42,6 +45,9 @@ Expected point:
 
 ### Demo 3: Ask Unsupported Question
 
+Mode:
+- Study Mode
+
 Question:
 - What is the final exam date for this course?
 
@@ -53,7 +59,20 @@ Show on screen:
 Expected point:
 - The system avoids overconfident unsupported responses.
 
-### Demo 4: Show Evaluation Evidence
+### Demo 4: Assessment-safe Hint Mode
+
+1. Switch mode to Assessment-safe Hint Mode.
+2. Ask a question that may look assessment-like.
+3. Show that the response provides:
+	- relevant sources and pages
+	- hints
+	- guiding questions
+	- prerequisite concepts
+	- what to review next
+4. Confirm it does not provide a direct final answer.
+5. Confirm citations and verification still appear.
+
+### Demo 5: Show Evaluation Evidence
 
 1. Open evaluation/eval_results.md.
 2. Explain that evaluation checks retrieval, citation, grounding, verification, and refusal.
@@ -63,4 +82,14 @@ Expected point:
 
 ## 5. Short Spoken Script
 
-"This prototype is an evidence-grounded study assistant for course PDFs. I upload lecture material, ask a question, and the system retrieves relevant pages before generating an answer. Each answer is tied to file and page citations, and the UI shows retrieved evidence and a transparent 5-step agent trace: Plan, Retrieve, Generate, Verify, and Respond. The verifier adds supported and confidence signals, and the system refuses when evidence is weak. We also prepared a lightweight evaluation set and results document to demonstrate retrieval quality, citation grounding, and refusal behavior."
+"This prototype is an evidence-grounded study assistant for course PDFs. I upload lecture material, ask a question, and the system retrieves relevant pages before generating an answer. In Study Mode it gives direct evidence-grounded explanations. In Assessment-safe Hint Mode it gives hints and guiding questions instead of a direct final answer. Each response is tied to file and page citations, and the UI shows retrieved evidence plus a transparent 5-step agent trace: Plan, Retrieve, Generate, Verify, and Respond. The verifier adds supported and confidence signals, and the system refuses when evidence is weak. We also prepared a lightweight evaluation set and results document to demonstrate retrieval quality, citation grounding, mode behavior, and refusal behavior."
+
+## 6. Peer Feedback Response (Closing)
+
+When closing the demo, explicitly mention:
+
+- Evaluation was strengthened in response to peer concerns about reliability claims.
+- Verifier logic was made transparent so confidence and support decisions are interpretable.
+- Evidence explanations were improved with ranking, matched terms, and selection reasons.
+- Assessment-safe Hint Mode was added to address academic integrity concerns.
+- Larger features such as GraphRAG and lecturer dashboards are intentionally future work for this MVP.
